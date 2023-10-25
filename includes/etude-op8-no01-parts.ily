@@ -15,7 +15,8 @@ global = {
   \set Timing.beatStructure = 1,1,1,1
 }
 
-rightHandUpper = \relative {
+rightHand = \relative {
+  \global
   \tupletOff
   \partial 4 \scaleDurations 2/3 { \voiceOne <fs' gs>8 q es' 
     <es, gs>8 q cs' <fs, as> q ds'  <ds, fs> q bs'  <es, gs> q cs' | 
@@ -49,33 +50,15 @@ rightHandUpper = \relative {
   cs4 as2) \scaleDurations 2/3 { <es as>8 q es' |
     <dss, as'>8 q dss'  <ds, as'> q ds'  <cs, gss'> q cs'  <bs, gss'> q bs' |
     <bs, gss'>8 q bs'  <cs, as'> q cs'  <cs, es> q as'
-  } s4 |
-  s2 \voiceOne fs'8 cs ds es |
-  s2. %
-}
-
-rightHandLower = \relative {
-  \partial 4 s4
-  s1 * 8 |
-  
-  \barNumberCheck 9
-  s1 * 8 |
-  
-  \barNumberCheck 17
-  s1 * 7 |
-  s2. <as' fs' cs'>4( |
+  } <as fs' cs'>4( |
   
   \barNumberCheck 25
-  <gs fs' b>4 <as fs' as>8 <b cs gs'> \voiceTwo <as cs>4 <a cs> |
-  \oneVoice <gs cs es>4 <es gs cs>2) s4 |
-}
-
-rightHand = {
-  \global
-  <<
-    \new Voice \rightHandUpper
-    \new Voice \rightHandLower
-  >>
+  <gs fs' b>4 <as fs' as>8 <b cs gs'> 
+    <<
+      { \voiceOne fs'8 cs ds es }
+      \new Voice { \voiceTwo <as, cs>4 <a cs> }
+    >> |
+  \oneVoice <gs cs es>4 <es gs cs>2)
 }
 
 leftHandUpper = \relative {
