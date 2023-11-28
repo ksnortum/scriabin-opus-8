@@ -9,8 +9,8 @@
   opus = ##f
   maintainer = "Knute Snortum"
   maintainerEmail = "knute (at) snortum (dot) net"
-  source = "https://vmirror.imslp.org/files/imglnks/usimg/f/f6/IMSLP309417-PMLP07375-Skrjabin_op.08_Zwoelf_Etueden.pdf" % SrcA
-  source = "https://vmirror.imslp.org/files/imglnks/usimg/a/a9/IMSLP263772-PMLP07375-Skrjabin_-_Etudes_-12-,_Op.8_-Moscow,_Muzgiz-.pdf" % SrcB
+  source = "https://vmirror.imslp.org/files/imglnks/usimg/a/a9/IMSLP263772-PMLP07375-Skrjabin_-_Etudes_-12-,_Op.8_-Moscow,_Muzgiz-.pdf" % SrcA
+  source = "https://vmirror.imslp.org/files/imglnks/usimg/f/f6/IMSLP309417-PMLP07375-Skrjabin_op.08_Zwoelf_Etueden.pdf" % SrcB
   copyright = \markup { 
     \center-column { \concat {
       "Copyright © 2023 Knute Snortum. This piece licensed under the " 
@@ -56,7 +56,7 @@
 \layout {
   \context {
     \Score
-    % \omit BarNumber % <-- uncomment after editing
+    \omit BarNumber
     \override Slur.details.free-head-distance = 0.75
   }
   \context {
@@ -66,6 +66,14 @@
 }
 
 \midi {
+  \context {
+    \Staff
+    \consists "Dynamic_performer"
+  }
+  \context {
+    \Voice
+    \remove "Dynamic_performer"
+  }        
   \context {
     \Score
     midiMinimumVolume = #0.20
