@@ -48,7 +48,7 @@ rightHand = \relative {
   
   \barNumberCheck 17
   fs8-\slurShapeC ( <d d'> fs  <d d'> d <as as'> |
-  b'8 <d, d'> b'  <es, es'> b' <e, e'> |
+  b'8 <fs fs'> b  <es, es'> b' <e, e'> |
   b'8 <d, d'> g  <cs, cs'> e <b b'> |
   e8 <a, a'> as  <g g'> as <fs fs'>) |
   b'8( <g g'> b  <g g'> g <ef ef'> |
@@ -621,7 +621,7 @@ pedal = {
 
 tempi = {
   \set Score.tempoHideNote = ##t
-  \textMark \markup \tempo-markup "Tempestoso" #1 #0 80-92
+  \textMark \markup \tempo-markup "Tempestoso" #1 #1 80-92
   \tempo 2 = 92
   s2. * 8 |
   
