@@ -622,7 +622,7 @@ pedal = {
 tempi = {
   \set Score.tempoHideNote = ##t
   \textMark \markup \tempo-markup "Tempestoso" #1 #1 80-92
-  \tempo 2 = 92
+  \tempo 2. = 84
   s2. * 8 |
   
   \barNumberCheck 9
@@ -636,10 +636,10 @@ tempi = {
   
   \barNumberCheck 33
   s2. * 7 |
-  s4. \tempo 2 = 86 s |
+  s4. \tempo 2. = 76 s |
   
   \barNumberCheck 41
-  \tempo 2 = 80
+  \tempo 2. = 72
   s2. * 8 |
   
   \barNumberCheck 49
@@ -652,7 +652,7 @@ tempi = {
   s2. * 8 |
   
   \barNumberCheck 73
-  \tempo 2 = 92
+  \tempo 2. = 84
   s2. * 8 |
   
   \barNumberCheck 81
@@ -666,7 +666,7 @@ tempi = {
   
   \barNumberCheck 105
   s2. * 4 |
-  \tempo 2 = 100
+  \tempo 2. = 92
   s2. * 4 |
   
   \barNumberCheck 113
