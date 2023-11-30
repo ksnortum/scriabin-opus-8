@@ -127,7 +127,7 @@ rightHand = \relative {
   
   \barNumberCheck 73
   <bff df>16 <af c> <bff df> <df f> <c e> <df f> |
-  <c e>16 <df f> <f bff> <ef af> <f bff>8 |
+  <c e>16 <df f> <f bff> <e af> <f bff>8 |
   \ottava 1 <bff df>16 <af c> <bff df> <df f> <c e> <df f> |
   <c e>16 <df f> <f bff> <bff, df> \ottava 0 <df, f> <f,bff> |
   <df' f>16 <c e> <df f> <c e> <df f> <f, a> |
