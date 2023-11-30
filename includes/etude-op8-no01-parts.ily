@@ -232,7 +232,14 @@ leftHandLower = \relative {
   <a a'>4 \voiceFour a as \oneVoice <bs, bs'>8 fs'' |
   <cs, cs'>8 fs' <fs as fs'>2-> <ds, ds'>8 gs' |
   <es, es'> cs'' <cs b'>2-> <fs,, fs'>8 cs'' |
-  \voiceFour <fs,, fs'>8 dss'' <bs bs'> bs, es, ds'' <b b'> es,, |
+  % The engraving in SrcA and SrcB of the notes/rhythms in the first beat of
+  % this measure are visually ambiguous. The figuration is the same as that on
+  % beat 3 of this measure and on beat 1 on the next measure, but the latter
+  % two instances are unambiguous in their notation. Follow that pattern
+  % instead. After making the edit, I discovered a score that uses the the
+  % umambiguous notation: https://imslp.org/wiki/Special:ReverseLookup/69176.
+  % The measure is blurry, but the difference is visible.
+  \voiceFour fs,,8 dss'' <bs bs'> bs, es, ds'' <b b'> es,, |
   as8 es'' <as, as'> as, <ds, ds'>4 <fs fs'> |
   
   \barNumberCheck 41
