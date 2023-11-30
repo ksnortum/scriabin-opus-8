@@ -171,7 +171,7 @@ rightHandLower = \relative {
   q8 <df ef> <c ef> <cf ef> <bf ef> <bf c> |
   <f bf ef>8 <f bf d> <f bf df>4 <bf df> |
   <df gf>8 <ff gf> <ef gf> <eff gf> <df gf> <c! ef> |
-  <df ff>8 q q <df af'> q <df gf> |
+  <df ff>8 q q <df af'> q <df g> |
   <c af'>8 <g bf> <af ef'> <df ef> <c ef> <df ef> |
   << { c8[ bf] c } \new Voice { \voiceFour ef4. } >> s8 s4 |
   
