@@ -47,7 +47,7 @@ rightHandUpper = \relative {
   \oneVoice \tuplet 5/4 { e16 c' g' c, f } \tuplet 3/2 { e16 g, a  c bf a } 
     <a, fs'! d'>2 |
   \tuplet 5/4 { 
-    \voiceOne d16 g ef'->( g, d')  c, fs! cs'!->( fs, c)  bf d bf'->( d, a')
+    \voiceOne d16 g ef'->( g, d')  c, fs! cs'!->( fs, c')  bf, d bf'->( d, a')
       bf, e fs->( e g) |
     fs16 d' a' d, gs  a, d g d fs  bf, d fs d f  e, g e' g, cs |
     c,16 fs ef' fs, d'  c, fs cs'! fs, c'  bf, g' c g bf  g, ef' a ef g | 
@@ -94,7 +94,7 @@ rightHandLower = \relative {
   \tuplet 5/4 { 
     d4 * 1/2 ef'8 d16  c,4 * 1/2 cs'8 c16  bf,4 * 1/2 bf'8 a16
       bf,4 * 1/2 fs'8 g16 |
-    f4 * 1/2 a'8 gs!16  a,4 * 1/2 g'8 fs16  bf,4 * 1/2 fs'8 f16
+    fs4 * 1/2 a'8 gs!16  a,4 * 1/2 g'8 fs16  bf,4 * 1/2 fs'8 f16
       e,4 * 1/2 e'8 cs16 |
     c,4 * 1/2 ef'8 d16  c,4 * 1/2 cs'8 c16  bf,4 * 1/2 c'8 bf16
       g,4 * 1/2 a'8 g16 |

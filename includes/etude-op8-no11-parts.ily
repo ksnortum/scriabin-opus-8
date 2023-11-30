@@ -123,7 +123,7 @@ rightHandLower = \relative {
   <f af>8 q s16 cs'' b g  a8\noBeam <g, df'>8 |
   
   \barNumberCheck 17
-  <c ef>8 <gf! c> q q q gf |
+  <af c>8 <gf! c> q q q gf |
   <f af>8 q <g cs>16\noBeam cs' b g  b8\noBeam <a, cs> |
   \key e \major
   %% Create enough space for the e sharp and natural accidentals

@@ -27,7 +27,7 @@ global = {
 rightHand = \relative {
   \global
   \partial 4 \scaleDurations 4/5 { ds'16 b' ds gs fs 
-    \beamOffsetA ds16-- gs, e fs b  \beamOffsetA cs-- e, fs gs b--  
+    \beamOffsetA ds16-- gs, e fs gs  \beamOffsetA cs-- e, fs gs b--
       \beamOffsetA as-- e fs ds cs  b gs' b e ds |
     b16-- e, cs ds e  \beamOffsetB as-- cs, ds e gs--  
       \beamOffsetC fss-- as, ds fss ds'  ds, b' ds as' gs |
@@ -96,7 +96,15 @@ leftHand = \relative {
                           
     \barNumberCheck 9
     \beamOffsetM a,16( ds fss ds' cs)  a,( ds fss ds' cs)
-      \beamOffsetM gs,( e' gs cs as)  \beamOffsetM gs,( e' fss cs' a) |
+    % In beat 4, third note of the quintuplet, SrcA has an F-sharp, but SrcB
+    % has no accidental, making it an F-double-sharp. Additionally, SrcA has a
+    % footnote for this note; consulting the Dover reprint that contains
+    % footnotes translated from Russian to English, it indicates that "[...]
+    % the MS and [...] Belyaev's edition" match SrcB. Follow SrcA here, since
+    % it aligns better with the right hand in this beat, and the analogous
+    % passage in measure 11 contains a G-sharp, transposed up a whole step from
+    % the matching note in measure 9, which would yield an F-sharp.
+      \beamOffsetM gs,( e' gs cs as)  \beamOffsetM gs,( e' fs cs' a) |
     \beamOffsetM gs,16 e' fs fs' a,  gs, ds' fs bs gs
       \beamOffsetM cs, gs' cs fs e  \beamOffsetM bs, fs' gs e' ds |
     \beamOffsetM b,16 es gss es' ds  \beamOffsetM b, es gss es' ds

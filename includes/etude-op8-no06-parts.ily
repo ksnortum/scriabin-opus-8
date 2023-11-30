@@ -129,13 +129,21 @@ rightHand = \relative {
       <a fs'> <gs e'!> <fs ds'> |
   }
   <e cs'>4) \tuplet 3/2 { 
-    <fs' ds'>8( <gs e'> <fs ds'>  <e cs'> <d bs'> <e cs'> |
-    <gs, e'>8 <ds' bs'> <e cs'>  <fs ds'> <gs e'> <gs ds'>
+    % Beat 3, second chord, lower note: SrcA has a D-sharp, but SrcB has no
+    % accidental, making it a D-natural. Follow SrcA in this case, because
+    % otherwise the interval between the chord notes would be an augmented
+    % sixth, which I don't think occurs elsewhere in the piece.
+    <fs' ds'>8( <gs e'> <fs ds'>  <e cs'> <ds bs'> <e cs'> |
+    <gs, e'>8 <ds' bs'> <e cs'>  <fs ds'> <gs e'> <fs ds'>
       <e cs'> <ds bs'> <e cs'> |
     <gs e'>8) <cs, as'>( <d b'>  <fs d'!>) <as, fss'>( <b gs'>
       <d b'>) <fss, ds'>( < gs e'> |
     <b gs'>8) <cs, as'>( <d b'>  <gs e'>) <as, fss'>( <b gs'>
-      <fss' d'> <d b'> <e cs'> |
+    % Beat 3, first chord, lower note: SrcA has an F-sharp, and SrcB has no
+    % accidental, making it an F-double-sharp. Follow SrcA with the F-sharp,
+    % which forms a minor sixth between chord notes, instead of a diminished
+    % sixth if the note were an F-double-sharp.
+      <fs' d'> <d b'> <e cs'> |
   }
   
   \barNumberCheck 49

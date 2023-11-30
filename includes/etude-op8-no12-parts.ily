@@ -227,7 +227,7 @@ leftHandUpper = \relative {
       fs' ds' as, |
     <ds, fs'>8 as'' as,  fs' as' as,,-\moveFingerA -2  <ds, fs'> as'' as,
       fs' ds' ds,-\moveFingerB -2 |
-    <ds, fs'>8 b'' b,  fs' fs' b,,  <ds, fs'>8 b'' b,  fs' fs' b,, |
+    <ds, fs'>8 b'' b,  fs' fs' b,,  <ds, fs'>8 b'' b,  fs' ds' b, |
     <ds, gs'>8 b'' b,  gs' b' b,,  <ds, gs'> b'' b,  gs' e' b, |
     <ds, gs'>8 b'' es,!  gs gs' b,,  <ds, gs'> b'' ds,  gs gs' b,, |
     <ds, gs'>8 ds'' ds,  b' ds' b,,  <ds, gs'> ds'' ds,  b' gs' b,, |
@@ -341,7 +341,7 @@ leftHandLower = \relative {
     <ds ds'>4 s8 s2. s4 <gs gs'>8 |
     <ds ds'>4 s8 s2. s4 <b'' b'>8 |
   }
-  \oneVoice <css,, cs'>8 <b'' b'> <es b' es> <b b'>  <ds,, ds'> <b'' b'>
+  \oneVoice <css,, css'>8 <b'' b'> <es b' es> <b b'>  <ds,, ds'> <b'' b'>
     <e b' e> <b b'> |
   <e,, e'>8 <b'' b'> <ds gs b ds> <b b'> <es,, es'> <b'' b'> <css gs' b css>4 |
   <fs,, fs'>8 <css'' gs' b css> <ds fs b ds> <ds, ds'> <fss, fss'> 

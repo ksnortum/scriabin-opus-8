@@ -89,7 +89,7 @@ rightHand = \relative {
       <gf df' gf> |
   }
   \clef bass <f df' f>4 <df f df'> q <f df' f> |
-  << { df'4 cf bf af | } \\ { <ef ef'>2 <df df'> | } >>
+  << { df'4 cf bf af | } \\ { <ef ef'>2 <f df'> | } >>
   <df gf df'>2 <ef gf df' ef>~ |
   \tuplet 3/2 2 { 
     q4 \clef treble <f df' f> <gf df' gf>  <df' gf df'> <af df af'> 
@@ -99,7 +99,7 @@ rightHand = \relative {
   \barNumberCheck 33
   \clef bass <f df' f>4 <df f df'> q <f df' f> | 
   << { df'4 c } \\ { <ef, ef'>2 } >> <f df' f>~ |
-  q4 <g bf f' g>2 <f df' f>4 |
+  q4 <g bf f' g>2 <af f' af>4 |
   \clef treble <a f' a>2 <c f c'> |
   <df f df'>2 << { <c c'>4 <cf cf'> } \\ { f2 } >> |
   << { <cf cf'>4 <bf bf'> q <af af'> | } \\ { f'2 f | } >> 
@@ -111,7 +111,7 @@ rightHand = \relative {
   
   \barNumberCheck 41
   \clef bass <f df' f>4 <df f df'> q <f df' f> |
-  <c gf' c>4 <a gf' a> q <c gf' c> |
+  <e bf' e>4 <c bf' c> q <e bf' e> |
   <f a f'>4 <f a c> q <f a f'> |
   <gf bf f'>4 <gf bf df> q^\accel <gf bf f'> |
   \key bf \minor

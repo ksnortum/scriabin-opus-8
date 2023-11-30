@@ -139,7 +139,7 @@ rightHandUpper = \relative {
   <g bf e g>4. \voiceOne \ottava 1 e'''4. \tuplet 2/3 { df8 \ottava 0 f, }
     e4. |
   \oneVoice <af,, f' af>4. <g c f g> <af c f af> <bf d af' bf> |
-  <c ef' c>4. <ef af ef'> <af ef' af> <g ef' g> |
+  <c af' c>4. <ef af ef'> <af ef' af> <g ef' g> |
   <gf ef' gf>4. <f a f'> \voiceTwo <f bf> q |
   \oneVoice <c df g c>4. <bf df g bf> <af c af'> r4 r8 |
   
@@ -587,7 +587,7 @@ leftHandLower = \relative {
   <ds ds'>4 \tuplet 3/2 { <gs gs'>8 <as as'> <b b'> } <e e'>4~ q8 <ds ds'> |
   <ds, ds'>4 \tuplet 3/2 { <cs' cs'>8 <ds ds'> <e e'> } <a a'>4~ q8 <gs gs'> |
   \eighthsInTwos.44
-  <ds, ds'>8 <cs'' a'> <e cs'> <cs a'> <ds,, ds'> <cs'' a'> <e cs'> <cs a'> |
+  <ds, ds'>8 <cs'' a'> <e cs'> <cs a'> <ds,, ds'> <cs'' gs'> <e cs'> <cs gs'> |
   \tuplet 3/2 { 
     <ds,, ds'>8 <a' a'> <as as'>  <e' e'> <css css'> <ds ds'>  <e e'> 
       <css css'> <ds ds'>  <e e'> <css css'> <ds ds'> |
